@@ -39,7 +39,7 @@ This code from the manuscript S. Zhang, et al. Intramolecular Charge Redistribut
 - seaborn
 - requests
 
-###Steps for Use
+### Steps for Use
 - Run wash.py to perform preliminary screening of the raw data (molecules1.csv and molecules2.csv).
 This generates molecules_filtered.csv containing the filtered molecules.
 
