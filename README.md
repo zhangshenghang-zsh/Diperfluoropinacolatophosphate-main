@@ -9,13 +9,14 @@ This code from the manuscript S. Zhang, et al. Intramolecular Charge Redistribut
 ├── wash.py
 ├── final_score.py
 ├── data/
-│   └── molecules1.csv    # raw data 1 originates from the PubChem database
-│   └── molecules2.csv    # raw data 2 originates from the in-house database
-│   └── molecules_filtered.csv    # the data obtained from preliminary screening of raw data 1 and 2 after running wash.py
-│   └── molecules_properties.csv    # input samples that by manually importing the structural properties of the molecules from molecules_filtered.csv for KMeans clustering
+│   ├── molecules1.csv    # raw data 1 originates from the PubChem database
+│   ├── molecules2.csv    # raw data 2 originates from the in-house database
+│   ├── molecules_filtered.csv    # the data obtained from preliminary screening of raw data 1 and 2 after running wash.py
+│   ├── molecules_properties.csv    # input samples that by manually importing the structural properties of the molecules from molecules_filtered.csv for KMeans clustering
 ├── kmeans_output/    # obtained after running main.py
 │   ├── clustering_results.csv    # KMeans clustering data
 │   ├── clustering_pca_plot.png    # plot of KMeans clustering results
+│   ├── cluster_centers_original.csv    # coordinates of cluster centers
 │   ├── cluster_centers_pca.csv    # coordinates of cluster centers obtained via PCA dimensionality reduction
 │   ├── pca_results.csv    # PCA dimensionality reduction coordinates for individual molecules
 │   ├── silhouette_plot.png    # plot of silhouette coefficients for different K values
@@ -23,7 +24,7 @@ This code from the manuscript S. Zhang, et al. Intramolecular Charge Redistribut
 └── score_output    # obtained after running final_score.py
      ├── cluster_2_scores.csv    # detailed scores of molecules in cluster 2
      ├── ranking_results.csv    # final scores and rankings in cluster 2
-     ├── salt_performance_scores.png    # detailed score plot for the top 15 molecules
+     └── salt_performance_scores.png    # detailed score plot for the top 15 molecules
 ```
 ### Operating system
 - Windows, Mac, Linux
